@@ -3,7 +3,7 @@ const NavigationBar = () => {
     <div>
       <a href="#" >Home</a>
       <a>About me</a>
-      <a>My Experiences</a>
+      <a>Experiences</a>
     </div>
   )
 }
