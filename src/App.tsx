@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { NavigationBar, Test } from './components'
+import { NavigationBar} from './components'
 import './App.css'
 import { HomePage, AboutMe, Portfolio, ContactMe } from './pages';
 
