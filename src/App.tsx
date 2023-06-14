@@ -1,7 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
+import { Route,Routes } from 'react-router-dom';
+
 import { NavigationBar} from './components'
+import { AboutMe, ContactMe,HomePage, Portfolio } from './pages';
+
 import './App.css'
-import { HomePage, AboutMe, Portfolio, ContactMe } from './pages';
 
 const App = () => {
   return (
