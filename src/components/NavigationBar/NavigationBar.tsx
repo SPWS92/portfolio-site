@@ -1,18 +1,31 @@
+import {NavLink} from "react-router-dom";
+
+const Link = ({to, text} : { to: string, text: string }) => (
+  <NavLink to={to} className={({isActive}) =>
+    `${isActive ? "border-b-2 border-white" : ""} hover:border-white hover:border-b-2 text-white`
+  }>{text}</NavLink>
+);
+
 const NavigationBar = () => {
   return (
-    <div className="flex justify-end p-8 border-black border-b-2">
-      <div className="grid grid-cols-4">
+    <div
+      className="flex justify-end p-8 border-black border-b-2 bg-black"
+      style={{
+        backgroundColor: 'black',
+        boxShadow: '0 0 5px 10px black',
+      }}>
+      <div className="grid grid-cols-3 text-xl">
+        {/* <span>
+          <Link to="/" text="Home" />
+        </span> */}
         <span>
-          <a href="/" className="hover:border-black hover:border-b-2" >Home</a>
+          <Link to="/about-me" text="About me" />
         </span>
         <span>
-          <a href="/about-me" className="hover:border-black hover:border-b-2">About me</a>
+          <Link to="/portfolio" text="Portfolio" />
         </span>
         <span>
-          <a href="/portfolio" className="hover:border-black hover:border-b-2" >Portfolio</a>
-        </span>
-        <span>
-          <a href="/contact-me" className="hover:border-black hover:border-b-2" >Contact me</a>
+          <Link to="/contact-me" text="Contact me" />
         </span>
       </div>
     </div>

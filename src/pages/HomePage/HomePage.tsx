@@ -1,24 +1,16 @@
-import Typewriter from "typewriter-effect";
+import avatarImage from "../../assets/avatar.jpg"
+import {Typewriter} from "../../components";
 
 const HomePage = () => {
   return (
-    <div className='App text-5xl'>
-      <Typewriter
-        onInit={(typewriter) => {
-          typewriter
-            .changeDelay(70)
-            .typeString("Hi,")
-            .pauseFor(600)
-            .typeString(" I'm <strong>Sean Smith</strong>")
-            .pauseFor(600)
-            .typeString("<br>")
-            .typeString("I'm a <strong>JavaScript Engineer</strong> working out of Huddersfield, UK")
-            .pauseFor(600)
-            .typeString("<br>")
-            .typeString("I've been <strong>building Software</strong> since 2014")
-            .start();
-        }}
-      />
+    <div className='App h-screen p-8'>
+      <div className="flex justify-center md:justify-start">
+        <img src={avatarImage} className="object-cover h-36 w-40 rounded-full" />
+      </div>
+
+      <div className='text-4xl md:text-5xl text-white'>
+        <Typewriter />
+      </div>
     </div>
   )
 }
