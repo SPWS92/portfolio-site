@@ -1,7 +1,7 @@
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const Link = ({to, text} : { to: string, text: string }) => (
-  <NavLink to={to} className={({isActive}) =>
+const Link = ({ to, text } : { to: string, text: string }) => (
+  <NavLink to={to} className={({ isActive }) =>
     `${isActive ? "border-b-2 border-white" : ""} hover:border-white hover:border-b-2 text-white`
   }>{text}</NavLink>
 );

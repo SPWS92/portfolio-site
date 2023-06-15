@@ -1,5 +1,7 @@
+import { Page } from '../../layouts';
+
 const AboutMe = () => {
-  return <div>AboutMe</div>
+  return <Page>AboutMe</Page>
 }
 
 export default AboutMe;

@@ -1,18 +1,18 @@
 module.exports = {
-  env: {browser: true, es2020: true, node: true},
+  env: { browser: true, es2020: true, node: true },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
   ],
   parser: '@typescript-eslint/parser',
-  parserOptions: {ecmaVersion: 'latest', sourceType: 'module'},
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['react-refresh', 'simple-import-sort', 'jsx-max-len'],
   rules: {
     'react-refresh/only-export-components': 'warn',
-    'object-curly-spacing': 2,
+    'object-curly-spacing': ["error", "always", { "objectsInObjects": false }],
     "indent": ["error", 2],
-    "no-multiple-empty-lines": ["error", {"max": 1}],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
     'simple-import-sort/imports': [
       'error',
       {
