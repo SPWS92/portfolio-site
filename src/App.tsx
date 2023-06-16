@@ -7,7 +7,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <div className='flex flex-col min-h-screen overflow-y-clip bg-gradient-to-tr from-indigo-950 to-indigo-900'>
+    <div className='flex flex-col min-h-screen overflow-y-clip bg-gradient-to-tr from-slate-200 to-slate-100'>
       <Navigation />
       <Routes>
         <Route path='/' element={<HomePage />}/>

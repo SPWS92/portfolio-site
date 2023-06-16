@@ -1,6 +1,10 @@
 const Footer = () => {
   return (
-    <div className="h-8 w-screen bg-black"></div>
+    <div className="h-12 w-screen bg-gray-800 flex justify-center align-center">
+      <p className="flex align-center items-center text-gray-400">
+        © All rights reserved. Sean Smith 2023
+      </p>
+    </div>
   )
 }
 
