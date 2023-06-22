@@ -1,12 +1,32 @@
-const WorkDetails = ({ role }) => (
-  <div className="flex flex-col space-y-1 justify-between py-5 space-y-3">
-    <div>
-      <p className='font-bold text-lg'>{role.product}</p>
-      <p className='font-semibold'>{role.company}</p>
+import { NavLink } from "react-router-dom";
+
+import { useResponsiveScreenSize } from "../../../hooks";
+
+const WorkDetails = ({ role }) => {
+
+  const screenSize = useResponsiveScreenSize();
+
+  return (
+    <div className="flex flex-col space-y-1 justify-between pb-5 space-y-3 my-8 border-0 rounded-xl shadow-xl overflow-hidden">
+      <div className="flex">
+        <img className="h-20 w-20" src={role.clientImage} />
+        <div className="px-4 flex flex-col justify-center">
+          <a href={role.clientLink} className='font-bold text-sky-500 text-lg hover:text-sky-400 hover:underline'>
+            {role.client && `${role.client}: `}{role.product}
+          </a>
+          <p>
+            <a href={role.companyLink} className='font-semibold hover:cursor-pointer text-sky-700 hover:text-sky-600 hover:underline'>
+              {screenSize <= 640 ? role.companyShorthand : role.company}
+            </a>
+          </p>
+        </div>
+      </div>
+      <p className="px-4">{role.description}</p>
+      <NavLink to='/placement' state={{ id: role.id }} className='font-bold text-sky-500 hover:text-sky-400 hover:underline px-4'>
+      Find out more
+      </NavLink>
+      <p className="px-4">Technologies used: <span className='font-semibold italic'>{role.skills.map(skill => skill.name).join(', ')}</span></p>
     </div>
-    <p>{role.description}</p>
-    <p>Technologies used: <span className='font-semibold italic'>{role.skills.join(', ')}</span></p>
-  </div>
-);
+  )};
 
 export default WorkDetails;

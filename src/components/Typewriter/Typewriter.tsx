@@ -1,7 +1,11 @@
 import Typewriter from "typewriter-effect";
 
+import { useResponsiveScreenSize } from "../../hooks";
+
 const TypewriterComponent = () => {
-  const isSmallScreen = window.innerWidth <= 640;
+  const screenSize = useResponsiveScreenSize();
+  const isSmallScreen = screenSize <= 640;
+  
   return (
     <Typewriter
       onInit={(typewriter) => {
