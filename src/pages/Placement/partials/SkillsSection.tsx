@@ -6,8 +6,8 @@ const SkillsSection = ({ skills }) => {
   }
   
   return (
-    <div className="min-h-96 justify-center py-8">
-      {/* <p>Technologies & Skills used</p> */}
+    <div className="justify-center pt-24 pb-16 flex flex-col">
+      <p className="flex justify-center mb-16 text-3xl whitespace-pre-wrap font-semibold">Skills demonstrated</p>
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 place-items-center lg:px-48">
         {skills.map((skill) => (
           <SkillsCard skill={skill} />

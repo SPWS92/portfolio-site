@@ -1,17 +1,17 @@
 import { useLocation } from "react-router-dom";
 
 import portfolioData from '../../data/portfolio-data.json'
-import { Header, SkillsSection } from "./partials";
+import { AboutTheProduct,Header, KeyRoles,SkillsSection } from "./partials";
 
 const Placement = () => {
   const { state } = useLocation();
   const placement = portfolioData.find(({ id }) => id === state.id);
   return (
     <div className='flex-grow overflow-y-auto text-gray-800'>
-      <Header name={placement?.company}/>
+      <Header name={placement?.client ?? placement?.company} findOutMore={placement?.companyLink} />
+      <AboutTheProduct product={placement.product} />
+      <KeyRoles />
       <SkillsSection skills={placement?.skills} />
-      <div>About the product</div>
-      <div>My key roles & responsibilities</div>
     </div>
   )
 }

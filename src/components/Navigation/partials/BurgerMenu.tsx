@@ -3,19 +3,17 @@ import { Popover, Transition } from '@headlessui/react'
 import {
   AtSymbolIcon,
   FolderIcon,
-  HomeIcon,
   UserIcon,
 } from '@heroicons/react/24/outline'
 
 const solutions = [
-  { name: 'Home', description: 'Get a little brief intro on me', href: '/', icon: HomeIcon },
   { name: 'About me', description: 'Read about me as a person and the journey I\'ve taken', href: '/about-me', icon: UserIcon },
   { name: 'Portfolio', description: "Read about my experiences as a developer", href: '/portfolio', icon: FolderIcon },
   { name: 'Contact me', description: 'Ways to contact me', href: '/contact-me', icon: AtSymbolIcon },
 ]
 const BurgerMenu = () => {
   return (
-    <Popover className="relative bg-gray-800 pl-8 sticky top-0">
+    <Popover className="relative bg-black pl-8 sticky top-0">
       <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-12 stroke-white">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

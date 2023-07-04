@@ -9,7 +9,7 @@ const WorkDetails = ({ role }) => {
   return (
     <div className="flex flex-col space-y-1 justify-between pb-5 space-y-3 my-8 border-0 rounded-xl shadow-xl overflow-hidden">
       <div className="flex">
-        <img className="h-20 w-20" src={role.clientImage} />
+        <img className="h-20 w-20 rounded-br-xl" src={role.clientImage} />
         <div className="px-4 flex flex-col justify-center">
           <a href={role.clientLink} className='font-bold text-sky-500 text-lg hover:text-sky-400 hover:underline'>
             {role.client && `${role.client}: `}{role.product}
@@ -21,11 +21,11 @@ const WorkDetails = ({ role }) => {
           </p>
         </div>
       </div>
-      <p className="px-4">{role.description}</p>
+      <p className="px-4 whitespace-pre-line">{role.description}</p>
+      <p className="px-4"><span className='font-semibold italic'>{role.skills.map(skill => skill.name).join(', ')}</span></p>
       <NavLink to='/placement' state={{ id: role.id }} className='font-bold text-sky-500 hover:text-sky-400 hover:underline px-4'>
       Find out more
       </NavLink>
-      <p className="px-4">Technologies used: <span className='font-semibold italic'>{role.skills.map(skill => skill.name).join(', ')}</span></p>
     </div>
   )};
 
