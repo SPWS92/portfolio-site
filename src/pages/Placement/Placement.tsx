@@ -9,8 +9,8 @@ const Placement = () => {
   return (
     <div className='flex-grow overflow-y-auto text-gray-800'>
       <Header name={placement?.client ?? placement?.company} findOutMore={placement?.companyLink} />
-      <AboutTheProduct product={placement.product} />
-      <KeyRoles />
+      <AboutTheProduct product={placement?.product} summary={placement?.productSummary} />
+      <KeyRoles description={placement?.myRole} />
       <SkillsSection skills={placement?.skills} />
     </div>
   )

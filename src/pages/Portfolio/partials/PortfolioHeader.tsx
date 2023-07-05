@@ -1,5 +1,3 @@
-import { NavLink } from "react-router-dom"
-
 const PortfolioHeader = () => {
   return (
     <div className="h-48 bg-black relative bg-gradient-to-t to-slate-950 from-slate-500 overflow-hidden flex flex-col justify-between">

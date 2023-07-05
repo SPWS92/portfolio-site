@@ -4,7 +4,7 @@
     "company": "BAE Systems Applied Intelligence",
     "companyShorthand": "BAE Systems AI",
     "companyLink": "https://www.baesystems.com/en/cybersecurity/home",
-    "client": "Lloyds Register",
+    "client": "Lloyd's Register",
     "clientLink": "https://www.lr.org/",
     "clientImage": "/logos/lr.jpeg",
     "product": "MAST",
@@ -48,14 +48,16 @@
         "link": "https://www.scrum.org/resources/what-scrum-module"
       }
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nQuisque gravida cursus metus ut feugiat. Vestibulum tincidunt eu metus id vehicula. Proin non vulputate ipsum, vel varius sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum sem vitae arcu mollis, vel pellentesque leo gravida. Suspendisse potenti. Duis a tincidunt odio. Etiam sed urna luctus, aliquet nunc eu, auctor velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris facilisis tincidunt massa, sit amet posuere sapien feugiat in. Nulla facilisi."
+    "description": "MAST was a large scale AngularJS project BAE Systems Applied Intelligence delivered for Lloyd's Register. Lloyd's Register are maritime experts that have been providing technical expertise, safety and solutions for their clients for 260 years.\nWhilst working on MAST I was working on a Scrum team as a front-end developer, delivering a customer facing application that was to be used to conduct safety inspections on ships and ???? at see and docked. This meant MAST not only needed to be reliable, fast and clear, it needed to work online and office whilst managing large amounts of data.",
+    "productSummary": "At a basic level MAST is essentially an MOT application that Lloyd's Register surveyors would use to survey all maritime vehicles, whether that commercial or government. Not everything Lloyd’s Register provides certificates for can be docked, due to this a key feature of MAST was that surveys could be conducted offline whilst out at sea.",
+    "myRole": "MAST was my first venture into Software Development. I started as an apprentice being thrown into the deep-end, working as as front-end developer on one of many Scrum teams. Initially I focused on bug fixes within the defect team. This provided me the perfect opportunity to develop my debugging skills whilst expanding my JavaScript and AngularJs knowledge.\n \n It wasn't too long before I was able to join a feature team giving me the opportunity to learn from the experienced developers around me on how to plan my work and code for the next developer. As there was a strong focus on every member of the team having a voice, I gained extensive experience in Scrum and was expected to run various ceremonies.\n \n Over time as my knowledge and experience grew, I became the front-end lead on MAST supporting, guiding and mentoring junior members of the team. I was expected to provide solutions to client-side problems whilst working closely with the Engineering Manager and Architect to plan upcoming work."
   },
   {
     "id": 2,
     "company": "BAE Systems Applied Intelligence",
     "companyShorthand": "BAE Systems AI",
     "companyLink": "https://www.baesystems.com/en/cybersecurity/home",
-    "client": "Lloyds Register",
+    "client": "Lloyd's Register",
     "clientLink": "https://www.lr.org/",
     "clientImage": "/logos/lr.jpeg",
     "product": "Class Direct",

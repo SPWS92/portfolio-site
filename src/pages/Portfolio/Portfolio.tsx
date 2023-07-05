@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
     <Page>
       <PortfolioHeader />
-      <ul role="list" className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <ul role="list" className="mx-auto max-w-6xl px-2 px-8">
         {portfolioData.map(role => (
           <WorkDetails key={role.id} role={role} />
         ))}
