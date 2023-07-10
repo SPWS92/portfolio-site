@@ -28,5 +28,5 @@ const WorkDetails = ({ role }) => {
       </NavLink>
     </div>
   )};
-
+  
 export default WorkDetails;

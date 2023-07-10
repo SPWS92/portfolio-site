@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom'
 
 const navigation = [
-  { name: 'About me', href: '/about-me' },
-  { name: 'Portfolio', href: '/portfolio' },
-  { name: 'Contact me', href: 'contact-me' },
+  { name: 'ABOUT', href: '/about-me' },
+  { name: 'PORTFOLIO', href: '/portfolio' },
+  { name: 'CONTACT', href: 'contact-me' },
 ]
 
 export default function NavBar() {

@@ -13,7 +13,7 @@ const solutions = [
 ]
 const BurgerMenu = () => {
   return (
-    <Popover className="relative bg-black pl-8 sticky top-0">
+    <Popover className="relative bg-black pl-8 top-0">
       <Popover.Button className="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-12 stroke-white">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

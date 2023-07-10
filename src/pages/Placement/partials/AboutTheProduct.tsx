@@ -1,7 +1,7 @@
 const AboutTheProduct = ({ product, summary }) => {
   
   return (
-    <div className="justify-center pt-24 flex flex-col">
+    <div className="justify-center py-8 flex flex-col">
       <div className="flex justify-center mb-8 text-3xl whitespace-pre-wrap font-semibold">
         What is "{product}"?
       </div>
