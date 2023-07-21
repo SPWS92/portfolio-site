@@ -1,32 +1,27 @@
 import { NavLink } from "react-router-dom";
 
-import { useResponsiveScreenSize } from "../../../hooks";
+interface Role {
+  id: number;
+  product: string;
+  companyShorthand: string;
+  client?: string;
+  clientImage: string;
+  description: string;
+}
+interface WorkDetailsProps {
+  role: Role;
+  index: number;
+}
 
-const WorkDetails = ({ role }) => {
-
-  const screenSize = useResponsiveScreenSize();
-
-  return (
-    <div className="flex flex-col space-y-1 justify-between pb-5 space-y-3 my-8 border-0 rounded-xl shadow-xl overflow-hidden">
-      <div className="flex">
-        <img className="h-20 w-20 rounded-br-xl" src={role.clientImage} />
-        <div className="px-4 flex flex-col justify-center">
-          <a href={role.clientLink} className='font-bold text-sky-500 text-lg hover:text-sky-400 hover:underline'>
-            {role.client && `${role.client}: `}{role.product}
-          </a>
-          <p>
-            <a href={role.companyLink} className='font-semibold hover:cursor-pointer text-sky-700 hover:text-sky-600 hover:underline'>
-              {screenSize <= 640 ? role.companyShorthand : role.company}
-            </a>
-          </p>
-        </div>
-      </div>
-      <p className="px-4 whitespace-pre-line">{role.description}</p>
-      <p className="px-4"><span className='font-semibold italic'>{role.skills.map(skill => skill.name).join(', ')}</span></p>
-      <NavLink to='/placement' state={{ id: role.id }} className='font-bold text-sky-500 hover:text-sky-400 hover:underline px-4'>
-      Find out more
-      </NavLink>
+const WorkDetails = ({ role, index }: WorkDetailsProps) => (
+  <NavLink to='/placement' state={{ id: role.id }} className={`flex flex-col ${index % 2 ? 'md:flex-row  border-r-4' : 'md:flex-row-reverse  border-l-4'} mb-24 lg:mx-96 lg:w-1/2 border-orange-700 group transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300` }>
+    <img src={role?.clientImage} className={`mb-6 md:mb-0 mx-8 lg:w-1/2 h-56 object-cover ${index % 2 ? "" : "mr-8"} rounded-md shadow-2xl`} />
+    <div className='px-8 w-full lg:w-1/2 flex flex-col space-y-3'>
+      <p className='text-orange-700 font-bold text-xl'>{role.client || role.companyShorthand} / {role.product}</p>
+      <p>{role.description}</p>
+      <p className='text-orange-700 hover:underline group-hover:underline w-fit'>Find out more</p>
     </div>
-  )};
+  </NavLink>
+);
   
 export default WorkDetails;

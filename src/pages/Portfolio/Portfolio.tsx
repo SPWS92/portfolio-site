@@ -1,43 +1,17 @@
-import { NavLink } from 'react-router-dom';
-
-import portfolioData from '../../data/portfolio-data.json'
+import portfolioData from '../../data/portfolioData';
 import { Page } from '../../layouts';
-import PortfolioHeader from './partials/PortfolioHeader';
 import WorkDetails from './partials/WorkDetails';
 
-// const Portfolio = () => {
-//   return (
-//     <Page>
-//       <PortfolioHeader />
-//       <div className="my-8 grid grid-cols-1 place-items-center gap-4">
-//         {portfolioData.map((datum, i) => (
-//           <div className="grid grid-cols-1 md:grid-cols-2 w-1/2 space-x-6">
-//             <img src={datum?.clientImage} className="w-full h-64 object-cover rounded-md shadow-xl order-last" />
-//             <div className='w-full'>
-//               <p className='text-orange-700 font-bold text-xl'>{datum.client} / {datum.product}</p>
-//               <p>{datum.description}</p>
-//               <p className='text-orange-700'>Find out more</p>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </Page>)
-// }
 const Portfolio = () => {
   return (
     <Page>
-      <PortfolioHeader />
+      <div className='p-8 mt-16 md:px-24 pb-16'>
+        <p className="text-4xl border-l-4 border-indigo-500 pl-2 mb-8 font-medium">Portfolio</p>
+        <p className="w-full lg:w-3/4 text-xl border-indigo-500 pl-2">For the entirety of my career I have worked in consulting. This has meant that over the years I have delivered various applications for multiple clients using different tech stacks. My focus has primarily been React and React Native, although I do have experience in AngularJS and Vue.js.</p>
+        <p className="w-full lg:w-3/4 text-xl border-indigo-500 pl-2">Please learn below about the applications I have delivered alongside phenomenal Scrum teams.</p>
+      </div>
       <div className="my-8 flex flex-col items-center">
-        {portfolioData.map((datum, i) => (
-          <div className={`flex flex-col ${i % 2 ? 'md:flex-row' : 'md:flex-row-reverse'} mb-24 mx-96 w-1/2`}>
-            <img src={datum?.clientImage} className="w-1/2 h-56 object-cover mr-8 rounded-md shadow-xl" />
-            <div className='p-4 w-1/2 flex flex-col space-y-3'>
-              <p className='text-orange-700 font-bold text-xl'>{datum.client} / {datum.product}</p>
-              <p>{datum.description}</p>
-              <NavLink to='/placement' state={{ id: datum.id }} className='text-orange-700 hover:underline w-fit'>Find out more</NavLink>
-            </div>
-          </div>
-        ))}
+        {portfolioData.map((datum, i) => <WorkDetails role={datum} index={i} key={i} />)}
       </div>
     </Page>)
 }
