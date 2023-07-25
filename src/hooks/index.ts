@@ -1,1 +1,1 @@
-export { default as useResponsiveScreenSize } from "./useResponsiveScreenSize"
+export { default as useResponsiveScreenSize } from './useResponsiveScreenSize'

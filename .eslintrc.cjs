@@ -10,9 +10,11 @@ module.exports = {
   plugins: ['react-refresh', 'simple-import-sort', 'jsx-max-len'],
   rules: {
     'react-refresh/only-export-components': 'warn',
-    'object-curly-spacing': ["error", "always", { "objectsInObjects": false }],
-    "indent": ["error", 2],
-    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    'object-curly-spacing': ['error', 'always', { 'objectsInObjects': false }],
+    'indent': ['error', 2],
+    'no-multiple-empty-lines': ['error', { 'max': 1 }],
+    'quotes': ['error', 'single'],
+    'jsx-quotes': ['error', 'prefer-single'],
     'simple-import-sort/imports': [
       'error',
       {

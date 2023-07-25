@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const useResponsiveScreenSize = () => {
   const [screenWidth, setScreenWidth] = useState({
@@ -12,9 +12,9 @@ const useResponsiveScreenSize = () => {
       height: window.innerHeight
     });
     
-    window.addEventListener("resize", handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
 
-    return () => window.removeEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
 
   return screenWidth;
