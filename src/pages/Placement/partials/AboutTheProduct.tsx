@@ -14,11 +14,11 @@ const AboutTheProduct = ({ product, summary, features }: AboutProductProps) => (
       <p className='flex mb-8 text-3xl whitespace-pre-wrap font-semibold border-l-4 w-fit border-indigo-500 pl-2'>
         What is "{product}"?
       </p>
-      <p className='flex text-xl leading-relaxed'>{summary}</p>
+      <p className='flex text-xl leading-relaxed whitespace-pre-wrap'>{summary}</p>
     </div>
     <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-      {features.map(feature => (
-        <FeatureCard feature={feature}>
+      {features?.map(feature => (
+        <FeatureCard feature={feature} key={feature.id}>
           <div className='w-full flex justify-start'>
             <div className='rounded-full bg-gradient-to-r from-indigo-500 to-indigo-800 w-fit p-2 mb-4'>
               <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='white' className='w-8 h-8'>

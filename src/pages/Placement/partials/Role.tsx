@@ -10,7 +10,7 @@ const Role = ({ description, skills }: RoleProps) => (
     <div className='h-fit w-fit p-6 bg-white bg-opacity-20 rounded-lg border-2 border-gray-400 whitespace-nowrap mx-8 md:mx-0 shadow-2xl mt-12 md:mt-0 md:mr-8'>
       <p className='text-lg font-extrabold'>Skills demonstrated</p>
       <ul>
-        {skills.map(({ name }) => <li className='pl-4'>- {name}</li>)}
+        {skills.map(({ name }) => <li key={name} className='pl-4'>- {name}</li>)}
       </ul>
     </div>
     <div className='px-8 flex flex-col w-fit'>

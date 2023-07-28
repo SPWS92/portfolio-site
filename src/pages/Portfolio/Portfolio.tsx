@@ -4,6 +4,13 @@ import { Page } from '@layouts/index';
 import WorkDetails from './partials/WorkDetails';
 
 const Portfolio = () => {
+  const { industryProjects, personalProducts } = portfolioData.reduce((projects, curProject) => {
+    projects[curProject.personalProject ? 'personalProducts' : 'industryProjects'].push(curProject);
+    return projects
+  }, { industryProjects: [], personalProducts: [] });
+  
+  console.log({ industryProjects, personalProducts });
+
   return (
     <Page>
       <div className='p-8 mt-16 xl:px-96 pb-16'>
@@ -12,7 +19,13 @@ const Portfolio = () => {
         <p className='w-full lg:w-3/4 text-xl border-indigo-500 pl-2'>Please learn below about the applications I have delivered alongside phenomenal Scrum teams.</p>
       </div>
       <div className='my-8 flex flex-col items-center'>
-        {portfolioData.map((datum, i) => <WorkDetails role={datum} index={i} key={i} />)}
+        {industryProjects?.map((datum, i) => <WorkDetails role={datum} index={i} key={i} />)}
+      </div>
+      <div className='p-8 xl:px-96'>
+        <p className='text-4xl border-l-4 border-indigo-500 pl-2 mb-8 font-medium'>Personal projects</p>
+      </div>
+      <div className='my-8 flex flex-col items-center'>
+        {personalProducts?.map((datum, i) => <WorkDetails role={datum} index={i} key={i} />)}
       </div>
     </Page>)
 }

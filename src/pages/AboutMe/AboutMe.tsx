@@ -20,8 +20,8 @@ const AboutMe = () => {
       <AboutMeTimeline />
       <div className='flex justify-center mt-20'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-          {qualifications.map(qualification => (
-            <FeatureCard feature={qualification}>
+          {qualifications.map((qualification) => (
+            <FeatureCard key={qualification.id} feature={qualification}>
               <div className='w-full flex justify-start'>
                 <div className='rounded-full bg-gradient-to-r from-indigo-500 to-indigo-800 w-fit p-2 mb-4'>
                   <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='white' className='w-8 h-8'>

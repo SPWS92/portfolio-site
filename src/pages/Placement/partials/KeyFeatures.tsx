@@ -1,4 +1,5 @@
 export interface FeatureProps {
+  id: number;
   heading: string;
   description: string;
 }

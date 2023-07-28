@@ -18,14 +18,17 @@ export const aboutMeData = [
 
 export const qualifications = [
   {
+    id: 1,
     heading: 'Foundation Degree Applied Computing',
     description: 'I graduated in 2017 with a Foundation Degree in Applied computing'
   },
   {
+    id: 2,
     heading: 'BSc (Hons) Applied Computing',
     description: 'I topped up my Foundation Degree in 2018 and attained my BSc in Applied Computing'
   },
   {
+    id: 3,
     heading: 'PSM1 Certification',
     description: 'As part of my continuing growth in Scrum I attained my Professional Scrum Master 1 Certification in 2021'
   },
