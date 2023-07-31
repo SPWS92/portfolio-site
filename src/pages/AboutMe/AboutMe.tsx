@@ -7,7 +7,7 @@ import AboutMeTimeline from './partials/AboutMeTimeline';
 const AboutMe = () => {
 
   return <Page>
-    <div className='font-medium mt-16 p-8 xl:px-96'>
+    <div className='font-medium mt-16 p-8 xl:px-44 3xl:px-96'>
       <p className='text-4xl border-l-4 border-indigo-500 pl-2 mb-16'>About me</p>
       <div className='flex mb-16'>
         <img src='/images/avatar.jpg' className='rounded-full w-44 h-44 object-cover'/>

@@ -7,11 +7,11 @@ const AboutMeTimeline = () => {
   
   return (
     <div>
-      {aboutMeData.map(({ title, description, image }, i) => (
-        <div key={`${i}-${title}`} className='mt-16'>
-          <p className='text-2xl'>{title}</p>
+      {aboutMeData.map(({ period, description, image }, i) => (
+        <div key={`${i}-${period}`} className='mt-16'>
+          <p className='text-2xl border-l-4 border-indigo-500 pl-2'>{period}</p>
           <div className={`flex flex-col ${shouldApplyStyling(i) ? 'xl:flex-row' : 'xl:flex-row-reverse'} mt-6`}>
-            <img src={image} className={`w-full h-96 object-cover rounded-lg shadow-2xl mb-8 md:mb-0  ${shouldApplyStyling(i) ? 'md:mr-8' : ''}`}/>
+            <img src={image} className={`w-full xl:w-1/3 h-96 object-cover rounded-lg shadow-2xl mb-8 md:mb-0  ${shouldApplyStyling(i) ? 'md:mr-8' : ''}`}/>
             <p className={`text-xl whitespace-pre-line ${shouldApplyStyling(i) ? '' : 'md:mr-8'}`}>{description}</p>
           </div>
         </div>

@@ -275,7 +275,7 @@ const portfolioData = [
     id: 7,
     companyLink: 'https://www.and.digital/',
     clientLink: 'https://www.sky.com/',
-    clientImage: '/logos/sky.png',
+    clientImage: '/images/portfolio.png',
     product: 'Portfolio Website',
     date: {
       start: '08/09/2017',
