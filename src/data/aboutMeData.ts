@@ -32,4 +32,4 @@ export const qualifications = [
     heading: 'PSM1 Certification',
     description: 'As part of my continuing growth in Scrum I attained my Professional Scrum Master 1 Certification in 2021'
   },
-]
+];

@@ -1,22 +1,47 @@
 import { Page } from '@layouts/index';
 
-const ContactMe = () => (
-  <Page>
-    <div className='flex flex-col justify-center items-center mt-16 p-8'>
-      <div>
-        <p className='flex mb-8 text-3xl whitespace-pre-wrap font-semibold border-l-4 w-fit border-indigo-500 pl-2'>
-            Get in touch
-        </p>
+interface ContactButtonProps {
+  text: string;
+  url: string;
+}
 
-        <div className='mb-4 space-y-6'>
-          <p>Currently the best way to contact me is through LinkedIn.</p>
-          <button className='border-2 border-indigo-500 rounded-full py-1 px-2 text-indigo-500 hover:border-indigo-800 hover:text-indigo-800 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300 cursor-pointer'>
-            Sean Smith | LinkedIn
-          </button>
-        </div>
+interface ContactSectionProps {
+  title: string;
+  cta: ContactButtonProps;
+}
+
+const ContactButton = ({ text, url }: ContactButtonProps) => (
+  <a href={url}>
+    <button className='border-2 border-indigo-500 rounded-full py-1 px-2 text-indigo-500 hover:bg-indigo-500 hover:text-white hover:font-semibold cursor-pointer w-28'>
+      {text}
+    </button>
+  </a>
+);
+
+const ContactSection = ({ title, cta }: ContactSectionProps) => {
+  return (
+    <div className='md:w-96 p-8'>
+      <p className='flex mb-8 text-3xl whitespace-pre-wrap font-semibold w-fit'>
+        {title}
+      </p>
+
+      <div className='mb-4'>
+        <p className='mb-6'>Currently the best way to contact me is through LinkedIn.</p>
+        <ContactButton text={cta.text} url={cta.url} />
       </div>
     </div>
+  )
+}
+
+const ContactMe = () => (
+  <Page>
+    <div className='flex flex-col md:flex-row justify-center items-center mt-16 p-8 md:divide-x-2'>
+      {[
+        { title: 'Get in touch', cta: { text: 'LinkedIn', url: 'https://www.linkedin.com/in/sean-smith-433b50b2/' }},
+        { title: 'Visit my GitHub', cta: { text: 'GitHub', url: 'https://www.linkedin.com/in/sean-smith-433b50b2/' }}
+      ].map(({ title, cta }) => <ContactSection title={title} cta={cta} />)}
+    </div>
   </Page>
-)
+);
 
 export default ContactMe;

@@ -1,15 +1,8 @@
 import { NavLink } from 'react-router-dom';
+import { ProjectProps } from '@data/portfolioData';
 
-interface Role {
-  id: number;
-  product: string;
-  companyShorthand: string;
-  client?: string;
-  clientImage: string;
-  description: string;
-}
 interface WorkDetailsProps {
-  role: Role;
+  role: ProjectProps;
   index: number;
 }
 

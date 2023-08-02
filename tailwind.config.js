@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       borderWidth: {
-        "xl": '16px'
+        'xl': '16px'
       },
       backgroundImage: {
-        'homepage-background': "url('src/assets/office.jpg')",
+        'homepage-background': 'url(\'src/assets/office.jpg\')',
       },
       height: {
         '10vh': '10vh',
@@ -41,27 +41,27 @@ export default {
         // => @media (min-width: 1280px) { ... }
       },
       animation: {
-        motion: "motion 80s infinite",
+        motion: 'motion 80s infinite',
       },
       transform: {
 
       },
       keyframes: {
         motion: {
-          "0%": {
-            transform: "translate(0px, 0px) rotate(0deg)"
+          '0%': {
+            transform: 'translate(0px, 0px) rotate(0deg)'
           },
-          "25%": {
-            transform: "translate(300px, 100px) rotate(-45deg)"
+          '25%': {
+            transform: 'translate(300px, 100px) rotate(-45deg)'
           },
-          "50%": {
-            transform: "translate(0px, 0px) rotate(0deg)"
+          '50%': {
+            transform: 'translate(0px, 0px) rotate(0deg)'
           },
-          "75%": {
-            transform: "translate(200px, 200px) rotate(-12deg)"
+          '75%': {
+            transform: 'translate(200px, 200px) rotate(-12deg)'
           },
-          "100%": {
-            transform: "translate(0px, 0px) rotate(0deg)"
+          '100%': {
+            transform: 'translate(0px, 0px) rotate(0deg)'
           }
         },
       }

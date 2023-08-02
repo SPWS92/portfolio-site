@@ -1,8 +1,7 @@
 import { useLocation } from 'react-router-dom';
-import { NavBar } from '@components/index'
 import { useResponsiveScreenSize } from '@hooks/index';
 
-import BurgerMenu from './partials/BurgerMenu'
+import { BurgerMenu, NavBar } from './partials'
 
 const Navigation = () => {
   const smallBreakpoint = 640;

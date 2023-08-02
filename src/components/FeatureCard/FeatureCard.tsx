@@ -1,4 +1,12 @@
-const FeatureCard = ({ children: icon, feature }) => {
+import { ReactElement } from 'react';
+import { FeatureProps } from '@data/portfolioData';
+
+interface FeatureCardProps {
+  children: ReactElement;
+  feature: FeatureProps
+}
+
+const FeatureCard = ({ children: icon, feature }: FeatureCardProps) => {
   return (
     <div className='w-full h-full border rounded-lg p-8 shadow-xl'>
       {icon}
