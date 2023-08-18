@@ -27,7 +27,9 @@ const ContactSection = ({ title, cta }: ContactSectionProps) => {
 
       <div className='mb-4'>
         <p className='mb-6'>Currently the best way to contact me is through LinkedIn.</p>
-        <ContactButton text={cta.text} url={cta.url} />
+        <ContactButton
+          text={cta.text}
+          url={cta.url} />
       </div>
     </div>
   )
@@ -39,7 +41,13 @@ const ContactMe = () => (
       {[
         { title: 'Get in touch', cta: { text: 'LinkedIn', url: 'https://www.linkedin.com/in/sean-smith-433b50b2/' }},
         { title: 'Visit my GitHub', cta: { text: 'GitHub', url: 'https://www.linkedin.com/in/sean-smith-433b50b2/' }}
-      ].map(({ title, cta }) => <ContactSection title={title} cta={cta} />)}
+      ].map(({ title, cta }, index) =>
+        <ContactSection
+          key={`${title}-${index}`}
+          title={title}
+          cta={cta}
+        />
+      )}
     </div>
   </Page>
 );

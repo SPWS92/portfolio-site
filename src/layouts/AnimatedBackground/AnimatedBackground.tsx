@@ -97,8 +97,10 @@ const elements = [
 const AnimatedBackground = ({ children, backgroundColour = 'bg-orange-100', shapeColour = 'border-t-orange-100' }: PageProps) => {
   return (
     <div className={`h-screen ${backgroundColour} relative overflow-hidden flex flex-col justify-center`}>
-      {elements.map(({ animation, position, shape }) => (
-        <div className={`absolute ${animation} ${position} ${shape} ${shapeColour} mix-blend-multiply opacity-70 hover:bg-blue-500`}></div>
+      {elements.map(({ animation, position, shape }, index) => (
+        <div
+          key={index}
+          className={`absolute ${animation} ${position} ${shape} ${shapeColour} mix-blend-multiply opacity-70 hover:bg-blue-500`}></div>
       ))}
       {children}
     </div>

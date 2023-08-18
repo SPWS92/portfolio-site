@@ -11,7 +11,7 @@ const useResponsiveScreenSize = () => {
       width: window.innerWidth,
       height: window.innerHeight
     });
-    
+
     window.addEventListener('resize', handleWindowResize);
 
     return () => window.removeEventListener('resize', handleWindowResize);

@@ -10,11 +10,21 @@ const App = () => {
     <div className='flex flex-col min-h-screen overflow-y-clip bg-white font-default'>
       <Navigation />
       <Routes>
-        <Route path='/' element={<HomePage />}/>
-        <Route path='/about-me' element={<AboutMe />}/>
-        <Route path='/portfolio' element={<Portfolio />}/>
-        <Route path='/contact-me' element={<ContactMe />}/>
-        <Route path='/placement' element={<Placement />}/>
+        <Route
+          path='/'
+          element={<HomePage />}/>
+        <Route
+          path='/about-me'
+          element={<AboutMe />}/>
+        <Route
+          path='/portfolio'
+          element={<Portfolio />}/>
+        <Route
+          path='/contact-me'
+          element={<ContactMe />}/>
+        <Route
+          path='/placement'
+          element={<Placement />}/>
       </Routes>
       <Footer />
     </div>

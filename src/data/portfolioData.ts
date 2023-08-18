@@ -244,17 +244,17 @@ const portfolioData = [
       }
     ],
     showCaseItems : [
-      { 
+      {
         id: 1,
-        src: '/images/customer_hub_ios.png' 
+        src: '/images/customer_hub_ios.png'
       },
-      { 
+      {
         id: 2,
-        src: '/images/customer_hub_macbook.png' 
+        src: '/images/customer_hub_macbook.png'
       },
-      { 
+      {
         id: 3,
-        src: '/images/customer_hub_ipad.png' 
+        src: '/images/customer_hub_ipad.png'
       },
     ]
   },
@@ -303,10 +303,10 @@ const portfolioData = [
     ],
     showCaseItems : [
       {
-        id: 1, 
+        id: 1,
         src: '/images/msa_ios.png'
       },
-      { 
+      {
         id: 2,
         src: '/images/msa_android.png'
       },
@@ -350,14 +350,14 @@ const portfolioData = [
     myRole: 'As the sole developer working on this React website, I designed and developed it from start to finish. Although there are upcoming changes to how data and content is accessed, it was decided that the initial MVP will have all data and content hardcoded. Future integration with a CMS will happen, but a decision is to be made on whether that will be an industry recognised service such Contentful or a one created by myself.',
     showCaseItems : [
       {
-        id: 1, 
+        id: 1,
         src: '/images/portfolio_ios.png'
       },
-      { 
+      {
         id: 2,
         src: '/images/portfolio_mac2.png'
       },
-      { 
+      {
         id: 3,
         src: '/images/portfolio_ipad.png'
       },

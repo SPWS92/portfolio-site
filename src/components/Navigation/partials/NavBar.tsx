@@ -26,10 +26,14 @@ const NavBar = () => (
           </div>
           <div className='flex space-x-2'>
             <a href='https://www.linkedin.com/in/sean-smith-433b50b2/'>
-              <img src='/images/linkedin.png' className='h-6 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300' />
+              <img
+                src='/images/linkedin.png'
+                className='h-6 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300' />
             </a>
             <a href='https://github.com/SPWS92'>
-              <img src='/images/github.png' className='h-6 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300' />
+              <img
+                src='/images/github.png'
+                className='h-6 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300' />
             </a>
           </div>
         </div>

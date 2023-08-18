@@ -7,7 +7,7 @@ describe('Components: Footer', () => {
   it('SHOULD match snapshot', () => {
     mockUseLocation.mockReturnValue({ pathname: 'footer' });
     const component = render(<Footer />);
-  
+
     expect(component).toMatchSnapshot();
   });
 })
