@@ -1,5 +1,34 @@
 import skills, { SkillProps } from '@data/skillsData';
 
+export interface FeatureProps {
+  id: number;
+  heading: string;
+  description?: string;
+}
+interface ShowcaseProps {
+  id: number;
+  src: string;
+}
+
+export interface ProjectProps {
+  id: number;
+  company?: string;
+  companyShorthand?: string;
+  companyLink?: string;
+  client?: string;
+  clientDescription?: string;
+  clientLink?: string;
+  clientImage?: string;
+  product: string;
+  personalProject: boolean;
+  skills?: SkillProps[];
+  description?: string;
+  productSummary: string;
+  myRole: string;
+  keyFeatures?: FeatureProps[];
+  showCaseItems?: ShowcaseProps[]
+}
+
 const portfolioData = [
   {
     id: 1,
@@ -304,18 +333,18 @@ const portfolioData = [
     keyFeatures: [
       {
         id: 1,
-        heading: 'Personalised Experience',
-        description: 'Using Adobe Target MSA offers a personalised experience for each customer'
-      },
-      {
-        id: 2,
         heading: 'Responsive Design',
         description: 'MSA was created to work on various screen sizes and devices'
       },
       {
+        id: 2,
+        heading: 'Built with React',
+        description: 'Built using the React Development Library'
+      },
+      {
         id: 3,
-        heading: 'Feature Toggling',
-        description: 'Using Firebase Remote config features could be developed and schedules to be turned on at a lated date'
+        heading: 'TailwindCSS',
+        description: 'Styled using TailwindCSS, the utility-first CSS Framework'
       }
     ],
     myRole: 'As the sole developer working on this React website, I designed and developed it from start to finish. Although there are upcoming changes to how data and content is accessed, it was decided that the initial MVP will have all data and content hardcoded. Future integration with a CMS will happen, but a decision is to be made on whether that will be an industry recognised service such Contentful or a one created by myself.',
@@ -335,34 +364,5 @@ const portfolioData = [
     ]
   }
 ];
-
-export interface FeatureProps {
-  id: number;
-  heading: string;
-  description: string;
-}
-interface ShowcaseProps {
-  id: number;
-  src: string;
-}
-
-export interface ProjectProps {
-  id: number;
-  company?: string;
-  companyShorthand?: string;
-  companyLink?: string;
-  client?: string;
-  clientDescription?: string;
-  clientLink?: string;
-  clientImage?: string;
-  product: string;
-  personalProject: boolean;
-  skills?: SkillProps[];
-  description?: string;
-  productSummary: string;
-  myRole: string;
-  keyFeatures?: FeatureProps[];
-  showCaseItems?: ShowcaseProps[]
-}
 
 export default portfolioData;

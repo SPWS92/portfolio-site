@@ -19,6 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
       "@components/*": [
@@ -38,6 +39,9 @@
       ],
       "@pages/*": [
         "./src/pages/*"
+      ],
+      "@test/*": [
+        "./src/testing/*"
       ],
     },
   },

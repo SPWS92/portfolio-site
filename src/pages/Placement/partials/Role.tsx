@@ -1,4 +1,4 @@
-import { SkillProps } from './SkillsCard';
+import { SkillProps } from '@data/skillsData';
 
 interface RoleProps {
   description?: string;
