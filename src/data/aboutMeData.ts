@@ -6,7 +6,7 @@ export const aboutMeData = [
   },
   {
     period: '2021 - 2022',
-    description: 'In June 2021 I joined AND Digital as a Product Developer where I would gain extensive experience in React and React Native. Alongside running internal React training and coding initiatives to help develop the skills of my fellow ANDis, I joined my AND Club\'s largest client, Sky.\n\nWorking on their Customer Hub team where I helped develop the tv/hub section of Sky.com, I was introduced to working in a very data drive mindset. Alongside creating new features we continually ran A/B testing to improve the experience of customers and increase the sales of Sky products.\n\nWorking on Sky.com was an incredible opportunity for me to develop further as a React developer whilst working alongside generous colleagues whilst working for an innovative company such as Sky.',
+    description: 'In June 2021 I joined AND Digital as a Product Developer where I would gain extensive experience in React and React Native. Alongside running internal React training and coding initiatives to help develop the skills of my fellow ANDis, I joined my AND Club\'s largest client, Sky.\n\nWorking on their Customer Hub team where I helped develop the tv/hub section of Sky.com, I was introduced to working in a very data drive mindset. Alongside creating new features we continually ran A/B testing to improve the experience of customers and increase the sales of Sky products.\n\nWorking on Sky.com was an incredible opportunity for me to develop further as a React developer, whilst also working for an innovative company such as Sky alongside generous colleagues.',
     image: '/images/murray.webp'
   },
   {

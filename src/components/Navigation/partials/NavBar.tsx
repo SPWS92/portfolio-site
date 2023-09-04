@@ -30,11 +30,11 @@ const NavBar = () => (
                 src='/images/linkedin.png'
                 className='h-6 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300' />
             </a>
-            <a href='https://github.com/SPWS92'>
+            {/* <a href='https://github.com/SPWS92'>
               <img
                 src='/images/github.png'
                 className='h-6 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300' />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

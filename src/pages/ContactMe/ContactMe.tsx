@@ -40,7 +40,7 @@ const ContactMe = () => (
     <div className='flex flex-col md:flex-row justify-center items-center mt-16 p-8 md:divide-x-2'>
       {[
         { title: 'Get in touch', cta: { text: 'LinkedIn', url: 'https://www.linkedin.com/in/sean-smith-433b50b2/' }},
-        { title: 'Visit my GitHub', cta: { text: 'GitHub', url: 'https://www.linkedin.com/in/sean-smith-433b50b2/' }}
+        // { title: 'Visit my GitHub', cta: { text: 'GitHub', url: 'https://www.linkedin.com/in/sean-smith-433b50b2/' }}
       ].map(({ title, cta }, index) =>
         <ContactSection
           key={`${title}-${index}`}
