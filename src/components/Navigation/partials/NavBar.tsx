@@ -28,6 +28,7 @@ const NavBar = () => (
             <a href='https://www.linkedin.com/in/sean-smith-433b50b2/'>
               <img
                 src='/images/linkedin.png'
+                alt='linked in link'
                 className='h-6 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-300' />
             </a>
             {/* <a href='https://github.com/SPWS92'>

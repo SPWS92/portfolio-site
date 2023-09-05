@@ -246,15 +246,18 @@ const portfolioData = [
     showCaseItems : [
       {
         id: 1,
-        src: '/images/customer_hub_ios.png'
+        src: '/images/customer_hub_ios.png',
+        alt: 'Customer Hub webpage on IOS'
       },
       {
         id: 2,
-        src: '/images/customer_hub_macbook.png'
+        src: '/images/customer_hub_macbook.png',
+        alt: 'Customer Hub webpage on Mac'
       },
       {
         id: 3,
-        src: '/images/customer_hub_ipad.png'
+        src: '/images/customer_hub_ipad.png',
+        alt: 'Customer Hub webpage on iPad'
       },
     ]
   },
@@ -283,7 +286,7 @@ const portfolioData = [
     ],
     description: 'MSA v3 is the third iteration of the My Sky App developed using React Native.',
     productSummary: 'MSA v3 is the third iteration of the My Sky App that was released in 2023. Originally v3 was developed to be a feature parity successor to v2, although this time built from the ground up with React Native instead of Sky\'s internally developed custom language/library.\n\nTo enable Sky\'s ambition to become App first, the purpose of MSA was to assist customers with all their needs and help ease the pressure on call centres. MSA is a hub for customers to manage all their Sky needs, whether that is TV, Mobile or Broadband. There is also a huge drive for personalisation using Adobe Target to provide a personalised experience per customer.',
-    myRole: 'As the new MSA project was gaining traction that AND Digital was helping Sky to deliver, I was asked to move from the Customer Hub into a new squad as my experience with Sky\'s codebases was a unique advantage.\n\nAs a React Native Developer in one of three Scrum teams, I was tasked with developing new components for our quickly growing library whilst also ensuring feature parity with MSAv2. As it should be within any development team, I also had the responsibility of supporting the other developers in their development journey.\n\nSky was migrating much of their content from an MSAv2 specific stack in Content Stack over to the company wide one, something I had a vast amount of experience with. I quickly jumped at the opportunity to share my experience, knowledge and tips with the Tech Leads, something that then resulted in me being one four people with full write access and the only non Tech Lead.\n\nAfter we delivered MSAv2 to the public we moved away from feature parity and started to introduce personalised experiences for customers. I have been heavily involved in the planning and introduction of personalised experiences and journeys into the Home and TV Screen.',
+    myRole: 'As the new MSA project was gaining traction that AND Digital was helping Sky to deliver, I was asked to move from the Customer Hub into a new squad as my experience with Sky\'s codebases was a unique advantage.\n\nAs a React Native Developer in one of three Scrum teams, I was tasked with developing new components for our quickly growing library whilst also ensuring feature parity with MSAv2. As it should be within any development team, I also had the responsibility of supporting the other developers in their development journey.\n\nSky was migrating much of their content from an MSAv2 specific stack in Content Stack over to the company wide one, something I had a vast amount of experience with. I quickly jumped at the opportunity to share my experience, knowledge and tips with the Tech Leads, something that then resulted in me being one four people with full write access and the only non Tech Lead.\n\nAfter we delivered MSAv3 to the public we moved away from feature parity and started to introduce personalised experiences for customers. I have been heavily involved in the planning and introduction of personalised experiences and journeys into the Home and TV Screen.',
     keyFeatures: [
       {
         id: 1,
@@ -304,11 +307,13 @@ const portfolioData = [
     showCaseItems : [
       {
         id: 1,
-        src: '/images/msa_ios.png'
+        src: '/images/msa_ios.png',
+        alt: 'My Sky App on IOS'
       },
       {
         id: 2,
-        src: '/images/msa_android.png'
+        src: '/images/msa_android.png',
+        alt: 'My Sky App on Android'
       },
     ]
   },
@@ -351,15 +356,18 @@ const portfolioData = [
     showCaseItems : [
       {
         id: 1,
-        src: '/images/portfolio_ios.png'
+        src: '/images/portfolio_ios.png',
+        alt: 'portfolio website on IOS'
       },
       {
         id: 2,
-        src: '/images/portfolio_mac2.png'
+        src: '/images/portfolio_mac2.png',
+        alt: 'Portfolio website on Mac'
       },
       {
         id: 3,
-        src: '/images/portfolio_ipad.png'
+        src: '/images/portfolio_ipad.png',
+        alt: 'Portfolio website on iPad'
       },
     ]
   }

@@ -29,6 +29,7 @@ const HomePage = () => {
             </div>
             <img
               src='/images/slanted_iphone.png'
+              alt='iphone'
               className='hidden lg:block mt-24 md:h-60vh lg:h-80vh' />
           </div>
         </div>

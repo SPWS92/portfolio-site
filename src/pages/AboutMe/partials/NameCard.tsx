@@ -3,6 +3,7 @@ const NameCard = () => {
     <div className='flex flex-col md:flex-row mb-16'>
       <img
         src='/images/avatar.jpg'
+        alt="avatar image"
         className='rounded-full w-44 h-44 object-cover'/>
       <div className='flex flex-col justify-center md:ml-12'>
         <p className='text-4xl'>Sean Smith</p>
